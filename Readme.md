@@ -1,1 +1,1 @@
-ReUniversity Web Project
+University Web Project 
