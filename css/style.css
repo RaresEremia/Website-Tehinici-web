@@ -1,0 +1,595 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #1A1A1A;
+    background-color: #FFFFFF;
+}
+
+/* Header and Title styles */
+header {
+    background-color: #000000;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    color: #666666;
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
+    font-style: italic;
+}
+
+header h1 a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 0 2rem;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #000000;
+    padding: 0.5rem 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #00B5B5;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    padding: 1rem;
+    min-width: 200px;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+/* Main content styles */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 4rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #000000;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #1A1A1A;
+}
+
+p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+/* Product categories */
+#categories ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+#categories li {
+    background-color: #F5F5F5;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+#categories li:hover {
+    transform: translateY(-5px);
+    background-color: #E0E0E0;
+}
+
+/* Bestsellers section */
+#bestsellers {
+    background-color: #F8F8F8;
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #00B5B5;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #009999;
+}
+
+/* Footer styles */
+footer {
+    background-color: #1A1A1A;
+    color: #FFFFFF;
+    padding: 2rem;
+    margin-top: 4rem;
+    position: relative;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.back-to-top a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #00B5B5;
+    color: white;
+    text-decoration: none;
+    border-radius: 50%;
+    font-size: 24px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.back-to-top a:hover {
+    background-color: #009999;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Footer Items */
+.footer-item {
+    background: transparent;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer-item summary {
+    cursor: pointer;
+    padding: 0.5rem 0;
+    font-size: 0.9rem;
+    color: #FFFFFF;
+}
+
+.footer-item .footer-content {
+    padding: 0.5rem 0;
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.7);
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.footer-section {
+    min-width: 0;
+}
+
+.footer-section h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #00B5B5;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 0.9rem;
+}
+
+footer a:hover {
+    color: #00B5B5;
+}
+
+address {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    line-height: 1.4;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 1rem;
+    margin-top: 1rem;
+}
+
+/* Footer FAQ styles */
+.faq-list details {
+    background: transparent;
+    box-shadow: none;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.faq-list summary {
+    padding: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+.faq-list p {
+    padding: 0.5rem 0;
+    margin: 0;
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.7);
+}
+
+/* Footer Terms styles */
+.footer-terms {
+    margin-top: 0.5rem;
+}
+
+.footer-terms summary {
+    padding: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+.footer-terms .terms-summary {
+    padding: 0.5rem 0;
+    margin-top: 0.5rem;
+}
+
+.footer-terms ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-terms li {
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 0.3rem;
+}
+
+.terms-button {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: #00B5B5;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}/* Responsive design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    nav ul ul {
+        position: static;
+        background-color: transparent;
+        padding: 0.5rem 0 0.5rem 1rem;
+    }
+
+    header h1 a {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+caption {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 1rem;
+    background: #00B5B5;
+    color: white;
+    text-align: center;
+}
+
+th, td {
+    padding: 1.2rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background-color: #1A1A1A;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+tbody tr:hover {
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
+}
+
+td[rowspan] {
+    background-color: #e8f4f4;
+    font-weight: 500;
+}
+
+tfoot {
+    background-color: #f5f5f5;
+    font-style: italic;
+    color: #666;
+}
+
+tfoot td {
+    padding: 1rem;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    table {
+        font-size: 0.9rem;
+    }
+    
+    th, td {
+        padding: 0.8rem;
+    }
+}
+
+/* Workout Map Section */
+.workout-map-section {
+    margin: 2rem 0;
+}
+
+.workout-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.workout-image {
+    flex: 0 0 auto;
+    text-align: center;
+}
+
+.workout-map-section img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #eee;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+.workout-map-section figcaption {
+    color: #666;
+    font-style: italic;
+    margin-top: 1rem;
+}
+
+/* Workout Target Sections */
+.workout-sections {
+    flex: 1;
+    position: relative;
+}
+
+.workout-target {
+    display: none; 
+    background-color: #f8f8f8;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: left;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+    scroll-margin-top: 100px; 
+}
+
+.workout-target.active {
+    display: block; 
+    opacity: 1;
+    transform: translateX(0);
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    animation: fadeSlideIn 0.3s ease-out forwards;
+}
+
+@keyframes fadeSlideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.workout-target h4 {
+    color: #00B5B5;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.workout-target ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.workout-target li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+    color: #666;
+}
+
+.workout-target .btn {
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .workout-sections {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Footer Terms Section */
+.footer-terms {
+    background-color: transparent;
+    color: white;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.footer-terms summary {
+    color: #E0E0E0;
+    cursor: pointer;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer-terms summary:hover {
+    color: #00B5B5;
+}
+
+.footer-terms .terms-summary {
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.footer-terms ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.footer-terms li {
+    color: rgba(255,255,255,0.8);
+    font-size: 0.9rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.footer-terms li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #00B5B5;
+}
+
+.terms-actions {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.terms-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #00B5B5;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.terms-button:hover {
+    background-color: #009999;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+figure {
+    margin: 2rem 0;
+}
+
+figcaption {
+    text-align: center;
+    margin-top: 1rem;
+    color: #666666;
+}
+
+

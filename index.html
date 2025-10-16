@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="ro">
+<html lang="en">
 <head>
     <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
-    <title>StorySphere</title>
+    <title>BabyGymShark</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore captivating stories at StorySphere - 
-                                      your digital refuge for fiction and non-fiction e-books.
-                                      Discover diverse genres, connect with authors, and join a
-                                      vibrant community of readers. Start your literary journey today!">
-    <meta name="keywords" content="story, sphere, platform, e-books, Fiction, Non-fiction, Novels,
-                                    Literature, Reading, Digital library, Online bookstore, Authors, 
-                                    Publishing, Bestsellers, Genres, Reading community, Literary works, Potatoes, 
-                                    Reading enthusiasts, E-publishing, Electronic books, Literary market, Reading recommendations">
+    <meta name="description" content="BabyGymShark - Your premium destination for stylish and 
+                                    comfortable fitness wear. Discover our collection of high-quality 
+                                    athletic apparel for all your workout needs. Join the BabyGymShark 
+                                    community today!">
+    <meta name="keywords" content="gym wear, fitness clothing, athletic apparel, workout clothes,
+                                    sports bra, leggings, shorts, tank tops, hoodies, performance wear,
+                                    gym accessories, fitness gear, training equipment, activewear,
+                                    fitness fashion, gym style, workout essentials, athletic wear">
     <meta name="author" content="Rares Eremia">
 
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
@@ -26,20 +26,22 @@
     <meta name="msapplication-config" content="./assets/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 </head>
-<body body id="top">
+<body id="top">
     <header>
-        <h1><a href="#">StorySphere</a></h1>
+        <h1><a href="#">BabyGymShark</a></h1>
         <nav>
             <ul>
-                <li><a href="#">Acasă</a>
+                <li><a href="#">Home</a>
                     <ul>
-                        <li><a href="#discover"><b>Descoperă</b></a></li>
-                        <li><a href="#genres"><b>Genuri</b></a></li>
-                        <li><a href="#authors"><b>Autori</b></a></li>
+                        <li><a href="#new-arrivals"><b>New Arrivals</b></a></li>
+                        <li><a href="#categories"><b>Categories</b></a></li>
+                        <li><a href="#bestsellers"><b>Bestsellers</b></a></li>
                     </ul>
                 </li>
-                <li><a href="#">Magazin</a></li>
-                <li><a href="#">Contul meu</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">My Account</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
@@ -47,43 +49,187 @@
 
     <main>
         <section>
-            <h2>Why Choose StorySphere?</h2>
-            <p>StorySphere is not just an e-books platform, it's a sphere of stories where fiction and non-fiction collide. We are a digital library that caters to all reading enthusiasts, offering a wide range of literary works from various genres and authors. Whether you're into science fiction, thrillers, romance, or biographies, our online bookstore has got you covered.</p>
-            <p>Our platform is a haven for both readers and authors. Readers can discover bestsellers, hidden gems, and new releases. They can also connect with their favorite authors, join the reading community, and get personalized reading recommendations. Authors, on the other hand, can publish their works, connect with their readers, and gain visibility in the literary market.</p>
-            <p>StorySphere is also about convenience. With our e-publishing platform, you can read your favorite e-books on any device, anytime, anywhere. No more carrying around heavy books or waiting for a book to be in stock. With StorySphere, your next great read is just a click away.</p>
-            <p>Join StorySphere today and start your literary journey!</p>
+            <h2>Why Choose BabyGymShark?</h2>
+            <p>BabyGymShark is not just another fitness wear brand - we're your partner in achieving your fitness goals. Our premium athletic apparel is designed with cutting-edge technology and style to enhance your workout experience. Whether you're into weightlifting, cardio, yoga, or CrossFit, our gear is engineered to perform.</p>
+            <p>We pride ourselves on quality and innovation. Our clothing is made from high-performance materials that offer superior comfort, moisture-wicking properties, and durability. Each piece is carefully crafted to provide the perfect balance of style and functionality.</p>
+            <p>At BabyGymShark, we believe in building a community. Join thousands of fitness enthusiasts who trust our brand for their workout needs. Our products are tested by athletes and designed for everyone who's serious about their fitness journey.</p>
+            <p>Join BabyGymShark today and elevate your workout experience!</p>
         </section>
-        <section id="discover">
-            <h2><i>Discover captivating stories</i></h2>
-            <p>Explore a diverse collection of fiction and non-fiction eBooks on our platform. 
-                From <strong>bestsellers</strong> to <strong>hidden gems</strong>, we have something for every <em>reader</em>.
-                Our digital library is a haven for reading enthusiasts, offering a wide range of genres and authors.</p>
-            <article id="genres">
-                <h3><dfn>Genres</dfn></h3>
-                <p>Find your favorite genres and discover new ones. 
-                    We have a wide range of genres to choose from, including:</p>
+        <section id="new-arrivals">
+            <h2>Discover Our Latest Collections</h2>
+            <p class="subtitle">Elevate Your Workout Style with Premium Fitness Wear</p>
+            <p>Explore our newest arrivals in fitness wear and accessories. 
+                From <strong>premium leggings</strong> to <strong>performance tops</strong>, we have something for every <em>fitness enthusiast</em>.
+                Our collection is designed to enhance your workout experience with style and comfort.</p>
+            <article id="workout-map" class="workout-map-section">
+                <h3>Target Your Training Areas</h3>
+                <div class="workout-container">
+                    <figure class="workout-image">
+                        <img src="assets/images/workout-zones.png" 
+                             alt="Interactive workout zones diagram" 
+                             usemap="#workout-map"
+                             width="400">
+                        <map name="workout-map">
+                            <area shape="poly" 
+                                  coords="167,75,233,75,267,225,133,225" 
+                                  href="#upper-body" 
+                                  alt="Upper Body Workouts" 
+                                  title="View Upper Body Gear">
+                            <area shape="circle" 
+                                  coords="200,300,33" 
+                                  href="#core" 
+                                  alt="Core Workouts" 
+                                  title="View Core Training Gear">
+                            <area shape="poly" 
+                                  coords="133,375,267,375,233,525,167,525" 
+                                  href="#lower-body" 
+                                  alt="Lower Body Workouts" 
+                                  title="View Lower Body Gear">
+                        </map>
+                        <figcaption>Click on different body areas to explore specialized gear</figcaption>
+                    </figure>
+                    
+                    <div class="workout-sections">
+                        <div id="upper-body" class="workout-target">
+                            <h4>Upper Body Equipment</h4>
+                            <ul>
+                                <li>Performance T-Shirts</li>
+                                <li>Training Tank Tops</li>
+                                <li>Compression Sleeves</li>
+                                <li>Sports Bras</li>
+                                <li>Lightweight Hoodies</li>
+                            </ul>
+                            <a href="#" class="btn">Shop Upper Body Gear</a>
+                        </div>
+
+                        <div id="core" class="workout-target">
+                            <h4>Core Training Equipment</h4>
+                            <ul>
+                                <li>Compression Tops</li>
+                                <li>Training Vests</li>
+                                <li>Workout Belts</li>
+                                <li>Seamless Tank Tops</li>
+                                <li>Athletic Crop Tops</li>
+                            </ul>
+                            <a href="#" class="btn">Shop Core Gear</a>
+                        </div>
+
+                        <div id="lower-body" class="workout-target">
+                            <h4>Lower Body Equipment</h4>
+                            <ul>
+                                <li>Performance Leggings</li>
+                                <li>Training Shorts</li>
+                                <li>Compression Tights</li>
+                                <li>Yoga Pants</li>
+                                <li>Running Shorts</li>
+                            </ul>
+                            <a href="#" class="btn">Shop Lower Body Gear</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
+            <script>
+                // Funcție pentru gestionarea afișării secțiunilor
+                function WorkoutMapManager() {
+                    const workoutMap = document.querySelector('map[name="workout-map"]');
+                    const sections = document.querySelectorAll('.workout-target');
+                    let activeSection = null;
+
+                    // Ascunde toate secțiunile
+                    function hideAllSections() {
+                        sections.forEach(section => {
+                            section.classList.remove('active');
+                        });
+                    }
+
+                    // Arată secțiunea specificată
+                    function showSection(sectionId) {
+                        const section = document.getElementById(sectionId);
+                        if (section) {
+                            hideAllSections();
+                            section.classList.add('active');
+                            activeSection = section;
+                        }
+                    }
+
+                    // Handler pentru click events
+                    function handleAreaClick(event) {
+                        event.preventDefault();
+                        const targetId = event.target.getAttribute('href').substring(1);
+                        showSection(targetId);
+                    }
+
+                    // Inițializare
+                    function init() {
+                        if (!workoutMap) return;
+                        
+                        // Adaugă event listeners pentru fiecare area
+                        workoutMap.querySelectorAll('area').forEach(area => {
+                            area.addEventListener('click', handleAreaClick);
+                            
+                            // Adaugă și hover effects pentru feedback vizual
+                            area.addEventListener('mouseenter', () => {
+                                area.style.cursor = 'pointer';
+                                const targetId = area.getAttribute('href').substring(1);
+                                const title = area.getAttribute('title');
+                                if (title) {
+                                    area.setAttribute('data-original-title', title);
+                                }
+                                area.setAttribute('title', `Click to view ${targetId.replace('-', ' ')} equipment`);
+                            });
+                            
+                            area.addEventListener('mouseleave', () => {
+                                const originalTitle = area.getAttribute('data-original-title');
+                                if (originalTitle) {
+                                    area.setAttribute('title', originalTitle);
+                                }
+                            });
+                        });
+
+                        // Ascunde toate secțiunile inițial
+                        hideAllSections();
+                    }
+
+                    // Returnează API public
+                    return {
+                        init,
+                        showSection,
+                        hideAllSections
+                    };
+                }
+
+                // Creează și inițializează managerul
+                const workoutManager = WorkoutMapManager();
+                workoutManager.init();
+            </script>
+
+            <article id="categories">
+                <h3><dfn>Categories</dfn></h3>
+                <p>Find your perfect workout gear. 
+                    We offer a wide range of products, including:</p>
                 <ul>
-                    <li>Science Fiction</li>
-                    <li>Thriller</li>
-                    <li>Romance</li>
-                    <li>Historical Fiction</li>
-                    <li>Biography</li>
-                    <li>Self-Help</li>
-                    <li>Travel</li>
+                    <li>Performance Leggings</li>
+                    <li>Sports Bras</li>
+                    <li>Training Shorts</li>
+                    <li>Seamless Collection</li>
+                    <li>Tank Tops</li>
+                    <li>Hoodies & Jackets</li>
+                    <li>Accessories</li>
                     <li>And many more...</li>
                 </ul>
             </article>    
-            <section id="authors">
-                <h3><dfn>Authors</dfn></h3>
-                <p>Connect with your favorite authors and discover new ones. 
-                    Our platform is home to a diverse community of talented <i>writers</i>.</p>
+            <section id="bestsellers">
+                <h3><dfn>Bestsellers</dfn></h3>
+                <p>Check out our most popular items loved by the fitness community. 
+                    Our bestsellers are proven favorites among <i>athletes</i> worldwide.</p>
                 <aside>
-                    <h4><abbr title="Featured Authors">FAs</abbr></h4>
+                    <h4><abbr title="Featured Products">FP</abbr> - Featured Products</h4>
                     <ul>
-                        <li>John Doe</li>
-                        <li>Jane Smith</li>
-                        <li>Michael Johnson</li>
-                        <li>Emily Davis</li>
+                        <li>Flex Leggings</li>
+                        <li>Power Sports Bra</li>
+                        <li>Performance Shorts</li>
+                        <li>Training Tank</li>
                         <li>And many more...</li>
                     </ul>
                 </aside>
@@ -91,81 +237,213 @@
         </section>
 
         <section>
-            <h2>About StorySphere</h2>
-            <p><dfn>StorySphere</dfn> is your digital haven for captivating stories. 
-                Whether you're a fiction enthusiast or a non-fiction aficionado, 
-                we have something for everyone. Our online bookstore is a hub for literary works, 
-                offering a wide range of e-books and a vibrant reading community.</p>
+            <h2>About BabyGymShark</h2>
+            <p><dfn>BabyGymShark</dfn> is your ultimate destination for premium fitness wear. 
+                Whether you're a professional athlete or just starting your fitness journey, 
+                we have the perfect gear for you. Our brand represents quality, style, and performance, 
+                offering a wide range of athletic wear for all types of workouts.</p>
             <blockquote>
-                <p><q>Books are the plane, and the train, and the road. They are the destination, and the journey.
-                    They are home.</q> - Anna Quindlen</p>
+                <p><q>Your workout should be a highlight of your day. Wearing the right gear isn't just about 
+                    looking good - it's about feeling confident and performing at your best.</q> - BabyGymShark Team</p>
             </blockquote>
             <figure>
                 <img
-                    srcset="assets/images/storysphere-large-400w.avif 400w, 
-                            assets/images/storysphere-large-600w.avif 600w,
-                            assets/images/storysphere-large-800w.avif 800w,
-                            assets/images/storysphere-large-1000w.avif 1000w"
-                    sizes="(max-width: 400px) 400px,
+                srcset="
+                    assets/images/storysphere-large-400w.avif 400w,
+                    assets/images/storysphere-large-600w.avif 600w,
+                    assets/images/storysphere-large-800w.avif 800w,
+                    assets/images/storysphere-large-1000w.avif 1000w"
+                sizes="(max-width: 400px) 400px,
                         (max-width: 600px) 600px,
                         (max-width: 800px) 800px,
                         1000px"
-                    src="storysphere-large.jpg"
-                    alt=""
-                    width="150"
-                    height="150"
-                />
-                <figcaption><em>Explore captivating stories at StorySphere</em></figcaption>
+                src="storysphere-large.jpg"
+                alt="Colecția de fitness wear BabyGymShark purtată de atleți profesioniști"
+                width="150"
+                height="150"
+                loading="lazy"
+                decoding="async">
+                <figcaption><em>Echipament de fitness premium pentru performanță maximă</em></figcaption>
             </figure>
         </section>
-         <section>
-            <h2>AWS CLF course</h2>
-            <ul>
-                <li><a href="https://www.youtube.com/embed/SOTamWNgDKc?si=X-j_GMQBoVmBh-uf" target="video_iframe">CLF-C01</a></li>
-                <li><a href="https://www.youtube.com/embed/NhDYbskXRgc?si=-lm4oo--GRtWRyLb" target="video_iframe">CLF-C02</a></li>
-            </ul>
-            <iframe name="video_iframe" width="560" height="315" src="https://www.youtube.com/embed/SOTamWNgDKc?si=X-j_GMQBoVmBh-uf" frameborder="0" allowfullscreen></iframe>
+        <section id="events">
+            <h2>Upcoming Events</h2>
+            <ol>
+                <li>
+                    <time datetime="2025-10-20T10:00">October 20, 2025, 10:00 AM</time> - 
+                    <b>Winter Collection Launch</b> - Discover our new winter fitness wear collection
+                </li>
+                <li>
+                    <time datetime="2025-10-25T15:30">October 25, 2025, 3:30 PM</time> - 
+                    <b>Fitness Workshop</b> - Free training session with our certified trainers
+                </li>
+                <li>
+                    <time datetime="2025-11-01T09:00">November 1, 2025, 9:00 AM</time> - 
+                    <b>Black Friday Preview</b> - Exclusive early access to deals for our community members
+                </li>
+            </ol>
         </section>
         <section>
-            <h2>Download the StorySphere App</h2>
-            <p>Download the StorySphere mobile app to get access to the latest books and updates.</p>
-            <p><a href="download/storysphere-app.zip" download>Download now</a></p>
+            <h2>Fitness Calculator</h2>
+            <p>Calculate your daily calorie burn using our formula:</p>
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                <mrow>
+                    <mi>Calories</mi>
+                    <mo>=</mo>
+                    <mo>(</mo>
+                    <mn>10</mn>
+                    <mo>×</mo>
+                    <mi>weight</mi>
+                    <mo>+</mo>
+                    <mn>6.25</mn>
+                    <mo>×</mo>
+                    <mi>height</mi>
+                    <mo>-</mo>
+                    <mn>5</mn>
+                    <mo>×</mo>
+                    <mi>age</mi>
+                    <mo>)</mo>
+                    <mo>×</mo>
+                    <mi>activity</mi>
+                </mrow>
+            </math>
+            <p>This helps you choose the right workout intensity for your fitness goals.</p>
+        </section>
+
+        <section>
+            <h2>Our Products Performance</h2>
+            <p>Customer satisfaction with our new leggings collection:
+                <meter value="9.2" min="0" max="10" low="6" high="8" optimum="9.5">9.2 out of 10</meter>
+            </p>
+            <p>Current stock level for winter collection:
+                <meter value="15" min="0" max="100" low="20" high="80" optimum="50">15%</meter>
+            </p>
+        </section>
+        <section>
+            <h2>Weekly Training Schedule</h2>
+            <table>
+                <caption>BabyGymShark Weekly Classes Schedule</caption>
+                <thead>
+                    <tr>
+                        <th>Ora</th>
+                        <th>Luni</th>
+                        <th>Miercuri</th>
+                        <th>Vineri</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>09:00</td>
+                        <td>Yoga Flow</td>
+                        <td>HIIT</td>
+                        <td>Pilates</td>
+                    </tr>
+                    <tr>
+                        <td>11:00</td>
+                        <td>CrossFit</td>
+                        <td rowspan="2">Maraton Fitness</td>
+                        <td>Box</td>
+                    </tr>
+                    <tr>
+                        <td>14:00</td>
+                        <td>Stretching</td>
+                        <td>Yoga</td>
+                    </tr>
+                    <tr>
+                        <td>16:00</td>
+                        <td>Power Lifting</td>
+                        <td>Cardio</td>
+                        <td>HIIT</td>
+                    </tr>
+                    <tr>
+                        <td>18:00</td>
+                        <td>Zumba</td>
+                        <td>Dance Fitness</td>
+                        <td>Body Pump</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4">* Toate clasele necesită rezervare în prealabil</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <section>
+            <h2>Promo Videos</h2>
+            <ul>
+                <li><a href="https://www.youtube.com/embed/yLaGqrTHVJg?si=iS6rLmUnai3vlqfU" target="video_iframe">Promo1</a></li>
+                <li><a href="https://www.youtube.com/embed/wnzZTY2d05w?si=Ld5VfwlKwIB8qBOb" target="video_iframe">Promo2</a></li>
+            </ul>
+            <iframe name="video_iframe" width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLLbV936DawxL_N1KK2x9uqkUjT7H3cPbX&autoplay=0&loop=0&controls=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        
+        <section>
+            <h2>Download the BabyGymShark App</h2>
+            <p>Download the BabyGymShark mobile app to shop on the go, track your orders, and get exclusive offers.</p>
+            <p><a href="download/babygymshark-app.zip" download>Download now</a></p>
         </section>
     </main>
 
+    <div id="back-to-top" class="back-to-top">
+        <a href="#top" title="Back to Top">↑</a>
+    </div>
+
     <footer>
-        <section>
-            <h2>
-                <details>
-                    <summary>FAQ</summary>
-                    <p>Here you can find answers to the most frequently asked questions about our platform.</p>
-                </details>
-            </h2>
-            <p>
-                <details>
-                    <summary>What payment methods do you accept?</summary>
-                    We accept various payment methods including credit cards, PayPal, and bank transfers.
-                </details>
-            </p>
-            <p>
-                <details>
-                    <summary>Do you offer refunds?</summary>
-                    Yes, we offer refunds within 30 days of purchase. Please see our refund policy for more details.
-                </details>
-            </p>
-        </section>
-        <a href="#top">Back to Top</a>
-        <p><a href="#">Despre noi</a></p>
-        <p><a href="#">Termeni și condiții</a></p>
-        <address>
-            Phone : <a href="tel:40727472588">+40 727 472 588</a><br>
-            Address: <a href="https://www.google.com/maps?q=Faculty+of+Mathematics+and+Computer+Science">Facultatea de Matematică și Informatică</a><br>
-            E-mail: <a href="mailto:rares.eremia@gmail.com">contact@storysphere.com</a><br>
-            <a href="https://wa.me/+40727472588" target="_blank">Chat with us on WhatsApp</a>
-        </address>
-        <small>&copy; StorySphere 2024 - <span id="currentDate"></span></small>
+        <div class="footer-grid">
+            <div class="footer-section">
+                <div class="footer-nav">
+                    <details class="footer-item">
+                        <summary>About Us</summary>
+                        <div class="footer-content">
+                            <p>BabyGymShark is your premium destination for stylish and comfortable fitness wear. We provide high-quality athletic apparel for all your workout needs.</p>
+                        </div>
+                    </details>
+                    <details id="terms" class="footer-terms footer-item">
+                        <summary>Terms and Conditions</summary>
+                        <div class="terms-summary">
+                            <ul>
+                                <li><strong>Returns:</strong> 30-day guarantee</li>
+                                <li><strong>Shipping:</strong> Free over $50</li>
+                                <li><strong>Quality:</strong> 1-year warranty</li>
+                            </ul>
+                            <a href="assets/docs/Gymshark - Terms and Conditions.pdf" target="_blank" class="terms-button">Full Terms</a>
+                        </div>
+                    </details>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <div class="faq-list">
+                    <details class="footer-item">
+                        <summary>Payment Methods</summary>
+                        <div class="footer-content">
+                            <p>Credit/Debit Card, PayPal, Bank Transfer</p>
+                        </div>
+                    </details>
+                    <details class="footer-item">
+                        <summary>Returns & Delivery</summary>
+                        <div class="footer-content">
+                            <p>30-day returns. 2-4 days delivery, express available</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <address>
+                    <a href="tel:40727472588">+40 727 472 588</a>
+                    <a href="https://www.google.com/maps?q=Faculty+of+Mathematics+and+Computer+Science">Facultatea de Matematică și Informatică</a>
+                    <a href="mailto:rares.eremia@gmail.com">contact@babygymshark.com</a>
+                    <a href="https://wa.me/+40727472588" target="_blank">WhatsApp</a>
+                </address>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <small>&copy; BabyGymShark <span id="currentYear"></span></small>
+        </div>
         <script>
-            document.getElementById('currentDate').textContent = new Date().toLocaleDateString();
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
         </script>
     </footer>
 </body>
